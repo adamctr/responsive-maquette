@@ -16,6 +16,7 @@ body {
   width: 100%;
   padding: 0;
   margin: 0;
+  font-family: "Open Sans", sans-serif;
 }
 
 // HEADER *******************************//
@@ -363,6 +364,7 @@ header {
       li {
         font-size: 3.5vw;
         font-weight: 600;
+        font-family: "Merriweather", serif;
       }
     }
   }
@@ -563,6 +565,7 @@ header {
           background-color: #bda9bb;
           border: none;
           font-size: 1.8rem;
+          cursor: pointer;
 
           &:hover {
             background-color: #b59bb3;
@@ -599,15 +602,15 @@ footer {
 // MEDIA QUERIES *******************************//
 //
 
-@media screen and(min-width:2000px) {
+@media screen and(min-width:1800px) {
   html {
-    font-size: 140%;
+    font-size: 100%;
   }
 }
 
 @media screen and(min-width:1440px) {
   html {
-    font-size: 100%;
+    font-size: 59%;
   }
 }
 

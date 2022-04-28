@@ -16,6 +16,7 @@ body {
   width: 100%;
   padding: 0;
   margin: 0;
+  font-family: "Open Sans", sans-serif;
 }
 
 header {
@@ -447,6 +448,7 @@ header {
 .part5 .part5-midside ul li {
   font-size: 3.5vw;
   font-weight: 600;
+  font-family: "Merriweather", serif;
 }
 
 .part5 .part5-rightside {
@@ -686,6 +688,7 @@ header {
   background-color: #bda9bb;
   border: none;
   font-size: 1.8rem;
+  cursor: pointer;
 }
 
 .part8 .part8-container .part8-rightside form input[type="button"]:hover {
@@ -720,15 +723,15 @@ footer p a {
   color: #b59bb3;
 }
 
-@media screen and (min-width: 2000px) {
+@media screen and (min-width: 1800px) {
   html {
-    font-size: 140%;
+    font-size: 100%;
   }
 }
 
 @media screen and (min-width: 1440px) {
   html {
-    font-size: 100%;
+    font-size: 59%;
   }
 }
 
