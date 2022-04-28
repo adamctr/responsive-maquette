@@ -14,7 +14,6 @@ html {
 
 body {
   width: 100%;
-  height: 100%;
   padding: 0;
   margin: 0;
 }
@@ -148,8 +147,9 @@ header {
 
 .p {
   font-family: "Open Sans", sans-serif;
-  font-size: 1.7rem;
+  font-size: 1.8rem;
   padding: 3rem;
+  line-height: 2.5rem;
 }
 
 .leftside {
@@ -162,7 +162,7 @@ header {
           flex-direction: column;
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
-  height: 100%;
+  height: 66rem;
 }
 
 .leftside .titleside {
@@ -177,7 +177,7 @@ header {
 
 .leftside .titleside h2 {
   font-family: "Merriweather", serif;
-  font-size: 8rem;
+  font-size: 8vw;
   font-weight: 300;
   margin-left: 3vw;
   margin-right: 1rem;
@@ -301,31 +301,441 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 100vh;
+  height: 60rem;
   width: 100%;
 }
 
 .part3 .part3-leftside {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  height: calc(100% - 5rem);
   width: 30%;
+  margin-top: 5rem;
 }
 
 .part3 .part3-leftside ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  margin-right: 5rem;
+  width: 15rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 2rem 0 0;
 }
 
 .part3 .part3-rightside {
   width: 100%;
   height: 100%;
-  background-color: red;
+  background-image: url("https://images03.nicepage.com/a1389d7bc73adea1e1c1fb7e/d611d5af242d56ea8d016d6a/pexels-photo-5990677.jpeg");
+  background-size: cover;
+}
+
+.part3 .part3-rightside .flex-end {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.part3 .part3-rightside .flex-end h2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+  height: 50%;
+  width: 50%;
+  padding: 0 4rem 0 4rem;
+  white-space: nowrap;
+  font-size: clamp(3rem, 5vw, 5rem);
+  background-color: #e5d9e3;
+}
+
+.part4 {
+  position: relative;
+  width: 100%;
+  min-height: 50rem;
+}
+
+.part4 .part4-title {
+  width: 100%;
+  height: 100%;
+}
+
+.part4 .part4-title h2 {
+  margin-left: 10vw;
+  font-size: 10rem;
+  width: 50rem;
+}
+
+.part4 .part4-aside {
+  position: absolute;
+  bottom: 3rem;
+  right: 18vw;
+}
+
+.part4 .part4-aside p {
+  font-size: clamp(3rem, 10vw, 5rem);
+  margin: 2rem 2rem 3.5rem 2rem;
+}
+
+.part5 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 60rem;
+  background-color: #e5d9e3;
+}
+
+.part5 .part5-leftside {
+  height: 100%;
+  background-image: url("https://images03.nicepage.com/a1389d7bc73adea1e1c1fb7e/4b76039be27e57d38bcce923/pexels-photo-3356833.jpeg?version=");
+  background-position: center;
+  background-size: cover;
+  border: solid;
+  -ms-flex-preferred-size: 33%;
+      flex-basis: 33%;
+}
+
+.part5 .part5-midside {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  -ms-flex-preferred-size: 33%;
+      flex-basis: 33%;
+}
+
+.part5 .part5-midside ul {
+  height: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.part5 .part5-midside ul li {
+  font-size: 3.5vw;
+  font-weight: 600;
+}
+
+.part5 .part5-rightside {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+  -ms-flex-preferred-size: 33%;
+      flex-basis: 33%;
+  padding: 3.3rem;
+}
+
+.part5 .part5-rightside img {
+  width: 20rem;
+  height: 20rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.part5 .part5-rightside p {
+  margin: 0;
+  padding: 3rem 0 3rem 0;
+}
+
+.part6 {
+  height: 30rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: url("https://images03.nicepage.com/a1389d7bc73adea1e1c1fb7e/e8af5196ab7555cda6319d8a/pexels-photo-2387793.jpeg");
+  background-position: center;
+  background-size: cover;
+}
+
+.part6 button {
+  width: 50%;
+  height: 40%;
+  text-transform: uppercase;
+  letter-spacing: 0.8rem;
+  font-size: 3.7rem;
+  font-weight: 600;
+  background: none;
+  border: solid white;
+  color: white;
+  cursor: pointer;
+}
+
+.part6 button:hover {
+  background-color: white;
+  color: black;
+}
+
+.part7 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.part7 h2 {
+  font-size: 4rem;
+  text-align: center;
+  padding: 2rem;
+}
+
+.part7 ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  padding: 0;
+  gap: 1rem;
+}
+
+.part7 ul li {
+  position: relative;
+  min-width: 50rem;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  min-height: 30rem;
+  height: 40rem;
+  cursor: pointer;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.part7 ul li .img-card {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-image: url("https://images03.nicepage.com/a1389d7bc73adea1e1c1fb7e/d661c0452b915eccbfc166da/pexelsphoto972325.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+
+.part7 ul li .img-card-bg {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  opacity: 0;
+}
+
+.part7 ul li .img-card-bg:hover {
+  opacity: 1;
+  -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.35)), to(rgba(0, 0, 0, 0.229)));
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.229));
+  z-index: 2;
+}
+
+.part7 p {
+  margin-left: 12vw;
+  font-size: 5rem;
+  width: 70%;
+  padding: 3rem;
+}
+
+.part7 p strong {
+  font-style: italic;
+}
+
+.part8 {
+  background-color: #e5d9e3;
+}
+
+.part8 .part8-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 50rem;
+  padding-top: 15rem;
+  padding-bottom: 15rem;
+  gap: 2rem;
+  width: 80%;
+  margin: auto;
+}
+
+.part8 .part8-container .part8-leftside {
+  min-height: 50rem;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+.part8 .part8-container .part8-leftside h2 {
+  width: 100%;
+  font-size: 5.5rem;
+  margin: 0 0 3rem 0;
+}
+
+.part8 .part8-container .part8-leftside p {
+  padding: 0;
+}
+
+.part8 .part8-container .part8-rightside {
+  height: 50rem;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+.part8 .part8-container .part8-rightside form {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.part8 .part8-container .part8-rightside form > input,
+.part8 .part8-container .part8-rightside form > textarea {
+  height: 5rem;
+  width: 100%;
+  padding-left: 1rem;
+  padding-top: 0.5rem;
+  font-size: 1.7rem;
+}
+
+.part8 .part8-container .part8-rightside form > textarea {
+  height: 10rem;
+}
+
+.part8 .part8-container .part8-rightside form .acceptTerms {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.part8 .part8-container .part8-rightside form .acceptTerms label {
+  display: block;
+  font-size: 2rem;
+  margin-left: 0.5rem;
+}
+
+.part8 .part8-container .part8-rightside form .acceptTerms label a {
+  color: #bda9bb;
+  text-decoration: none;
+}
+
+.part8 .part8-container .part8-rightside form input[type="button"] {
+  color: white;
+  width: 11rem;
+  background-color: #bda9bb;
+  border: none;
+  font-size: 1.8rem;
+}
+
+.part8 .part8-container .part8-rightside form input[type="button"]:hover {
+  background-color: #b59bb3;
+}
+
+footer {
+  height: 30rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #333333;
+  color: white;
+  padding: 2rem;
+}
+
+footer p {
+  font-size: 1.8rem;
+}
+
+footer p a {
+  text-decoration: none;
+  color: #b59bb3;
+}
+
+@media screen and (min-width: 2000px) {
+  html {
+    font-size: 140%;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  html {
+    font-size: 100%;
+  }
 }
 
 @media screen and (max-width: 768px) {
+  html {
+    font-size: 50%;
+  }
   .part1 {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -333,11 +743,50 @@ header {
             flex-direction: column;
     height: 125rem;
   }
-  .part1 .part3-leftside .img-desc-1 {
-    height: 100%;
+  .part3 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 120rem;
   }
-  .part1 .part3-leftside .img-desc-1 .bg-img {
-    height: 40rem;
+  .part3 .part3-leftside {
+    width: 100%;
+    height: 40%;
+  }
+  .part3 .part3-rightside {
+    height: 100rem;
+    border: 3px red;
+  }
+  .part3 .part3-rightside .flex-end h2 {
+    width: 75%;
+    height: 60%;
+    font-size: 4.5rem;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  html {
+    font-size: 40%;
+  }
+  .part8-container {
+    height: 115rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .part8-container > * {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  html {
+    font-size: 35%;
+  }
+  .part7 > ul > li {
+    width: 30rem;
   }
 }
 
@@ -347,7 +796,7 @@ li {
 }
 
 .scicon {
-  width: 1rem;
-  height: 1rem;
+  width: 2rem;
+  height: 2rem;
 }
 /*# sourceMappingURL=style.css.map */
