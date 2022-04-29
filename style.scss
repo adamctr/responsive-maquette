@@ -616,12 +616,21 @@ footer {
 
 @media screen and(max-width:768px) {
   html {
-    font-size: 50%;
+    font-size: 49%;
+  }
+
+  header {
+    height: 20rem;
+    max-height: none;
   }
 
   .part1 {
     flex-direction: column;
-    height: 125rem;
+    height: 130rem;
+
+    .img-desc-1 {
+      height: 55rem;
+    }
   }
 
   .part3 {
@@ -650,7 +659,7 @@ footer {
 
 @media screen and(max-width:425px) {
   html {
-    font-size: 40%;
+    font-size: 45%;
   }
 
   .part8-container {

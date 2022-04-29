@@ -737,14 +737,21 @@ footer p a {
 
 @media screen and (max-width: 768px) {
   html {
-    font-size: 50%;
+    font-size: 49%;
+  }
+  header {
+    height: 20rem;
+    max-height: none;
   }
   .part1 {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    height: 125rem;
+    height: 130rem;
+  }
+  .part1 .img-desc-1 {
+    height: 55rem;
   }
   .part3 {
     -webkit-box-orient: vertical;
@@ -770,7 +777,7 @@ footer p a {
 
 @media screen and (max-width: 425px) {
   html {
-    font-size: 40%;
+    font-size: 45%;
   }
   .part8-container {
     height: 115rem;
