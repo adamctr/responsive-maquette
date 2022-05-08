@@ -598,6 +598,17 @@ footer {
   }
 }
 
+.part1,
+.part2,
+.part3,
+.part4,
+.part5,
+.part6,
+.part7,
+.part8 {
+  width: 100%;
+}
+
 //
 // MEDIA QUERIES *******************************//
 //
@@ -670,15 +681,16 @@ footer {
       width: 100%;
     }
   }
+
+  .part7 > ul > li {
+    height: 10rem;
+    min-height: none;
+  }
 }
 
 @media screen and(max-width:400px) {
   html {
-    font-size: 35%;
-  }
-
-  .part7 > ul > li {
-    width: 30rem;
+    font-size: 40%;
   }
 }
 
