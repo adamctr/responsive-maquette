@@ -104,14 +104,11 @@ header {
 }
 
 .box .lines-container {
-  width: 2.75rem;
-  height: 1.8rem;
+  width: 3rem;
+  height: 2.5rem;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  margin: 0 2rem 0 2rem;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 .box .lines-container .line {
@@ -119,6 +116,8 @@ header {
   width: 100%;
   height: 3px;
   background: black;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
 }
 
 .box .lines-container .line:nth-child(1) {
@@ -126,11 +125,25 @@ header {
 }
 
 .box .lines-container .line:nth-child(2) {
-  top: 50%;
+  top: 1.25rem;
 }
 
 .box .lines-container .line:nth-child(3) {
-  top: 100%;
+  top: 2.5rem;
+}
+
+.box .lines-container .line.active:nth-child(1) {
+  top: 1.25rem;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.box .lines-container .line.active:nth-child(2) {
+  top: 1.25rem;
+}
+
+.box .lines-container .line.active:nth-child(3) {
+  top: 2.5rem;
 }
 
 .main {
@@ -742,6 +755,10 @@ footer p a {
   header {
     height: 20rem;
     max-height: none;
+  }
+  .searchbar {
+    --searchbarheight: 6rem;
+    --searchbarwidth: 40rem;
   }
   .part1 {
     -webkit-box-orient: vertical;
