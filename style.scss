@@ -10,6 +10,7 @@ html {
   width: 100%;
   height: 100%;
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -22,15 +23,17 @@ body {
 // HEADER *******************************//
 
 header {
+  position: fixed;
+  width: 100%;
+  background-color: white;
   display: flex;
   align-items: center;
   justify-content: space-between;
   min-height: 7.5rem;
-  height: calc(20vh - 12vw);
-  max-height: 12rem;
   padding: 0 6rem 0 6rem;
   border-top: 0.1rem solid #c0c0c0;
   border-bottom: 0.1rem solid #c0c0c0;
+  z-index: 100;
 }
 
 // SEARCHBAR
@@ -84,30 +87,43 @@ header {
   border: none;
   background: none;
   cursor: pointer;
+  margin-left: 2rem;
 
   .lines-container {
-    width: 2.75rem;
-    height: 1.8rem;
+    width: 3rem;
+    height: 2.5rem;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    margin: 0 2rem 0 2rem;
+    transform: translateY(-50%);
 
     .line {
       position: absolute;
       width: 100%;
-      height: 3px;
+      height: 2px;
       background: black;
+      transition: all 1s ease;
 
       &:nth-child(1) {
         top: 0;
       }
       &:nth-child(2) {
-        top: 50%;
+        top: 1.25rem;
       }
       &:nth-child(3) {
-        top: 100%;
+        top: 2.5rem;
+      }
+    }
+
+    .line.active {
+      &:nth-child(1) {
+        top: 1.25rem;
+        transform: rotate(90deg);
+      }
+      &:nth-child(2) {
+        top: 1.25rem;
+        transform: rotate(180deg);
+      }
+      &:nth-child(3) {
+        top: 3rem;
       }
     }
   }
@@ -116,6 +132,35 @@ header {
 .main {
   width: 100%;
   height: 100%;
+  padding-top: 7.5rem;
+}
+
+.menu {
+  position: fixed;
+  transform: translateX(100vw);
+  height: 100vh;
+  width: 100%;
+  z-index: 1;
+  transition: all 1s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0 5rem 0;
+  font-size: clamp(6rem, 5vw, 10rem);
+
+  a {
+    font-family: "Merriweather", serif;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    text-decoration: none;
+    color: white;
+    padding: 2rem;
+  }
+}
+
+.menu.active {
+  transform: translateX(0);
+  background-color: #333333;
 }
 
 // PART1 *******************************//
@@ -631,8 +676,17 @@ footer {
   }
 
   header {
-    height: 20rem;
+    height: 15rem;
     max-height: none;
+  }
+
+  .main {
+    padding-top: 15rem;
+  }
+
+  .searchbar {
+    --searchbarheight: 6rem;
+    --searchbarwidth: 40rem;
   }
 
   .part1 {
